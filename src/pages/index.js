@@ -3,6 +3,7 @@ import SocialIcons from "@/components/SocialIcons";
 import About from "@/sections/About";
 import Home from "@/sections/Home";
 import Navbar from "@/sections/Navbar";
+import Projects from "@/sections/Projects";
 import Skills from "@/sections/Skills";
 import React from "react";
 
@@ -18,6 +19,7 @@ function Index() {
         <Home/>
         <About/>
         <Skills/>
+        <Projects/>
       </main>
     </div>
   )

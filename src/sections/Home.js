@@ -11,7 +11,7 @@ function Home() {
                 Soy un Desarrollador Web Full Stack, me desenvuelvo bien tanto en el Front-end como en el Back-end del desarrollo. Siempre busco aprender y dominar nuevas tecnologías, en especial las que me demanden 👨‍💻.
             </p>
             <div className="home-button">
-                <Button text="Check out my projects" link="/#work" />
+                <Button text="Check out my projects" link="/#projects" />
             </div>
         </div>
     )
