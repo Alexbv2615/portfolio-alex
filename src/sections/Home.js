@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 function Home() {
     return (
         <div className="home">
-            <h1 className="home-title">Hi 👋, Im </h1>
+            <h1 className="home-title">Hi 👋, I am </h1>
             <h2 className="home-title-large">Alexander Noel</h2>
             <h3 className="home-title-large home-title-sub">Full Stack Developer</h3>
             <p className="home-text">
