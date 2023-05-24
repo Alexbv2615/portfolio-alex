@@ -32,7 +32,7 @@ function Navbar(){
                         }
                     </ul>
                     <div className="nav-items-button">
-                        <Button text="Curriculum Vitae" link="/cv-alex.pdf" />
+                        <button className="btn" href="/cv-alex.pdf">Curriculum Vitae</button>
                     </div>
                 </div>
             </div>

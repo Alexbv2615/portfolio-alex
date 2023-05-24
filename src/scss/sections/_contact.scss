@@ -1,0 +1,97 @@
+.contact {
+    max-width: 700px;
+    margin: 12rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .contact-title {
+        color: var(--theme-color);
+        font-size: var(--tbase);
+        font-family: var(--fira-code);
+        font-weight: 300;
+        &::before{
+            counter-increment: title;
+            content: "0" counter(title) ".";
+            margin-right: 0.5rem;
+            color: var(--theme-color);
+        }
+    }
+    .contact-sub-title{
+        margin: 2rem 0;
+        font-size: var(--tgiant);
+        color: var(--light-slate);
+        font-family: var(--raleway);
+    }
+    .contact-text{
+        // border: 2px solid red;
+        margin-bottom: 3rem;
+        color: var(--slate);
+        font-size: var(--tlarge);
+        letter-spacing: 0.07rem;
+        line-height: 1.6rem;
+        font-weight: 600;
+        font-family: var(--raleway);
+        text-align: center;
+    }
+    .contact-cta{
+        margin-top: 1rem;
+        .btn{
+            padding: 1rem 2rem;
+            font-family: var(--raleway);
+        }
+    }
+
+    //BUTTON STYLE
+    .codepen-button {
+  display: block;
+  cursor: pointer;
+  color: var(--theme-color);
+  font-family: var(--fira-code);
+  margin: 0 auto;
+  position: relative;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 3px;
+  isolation: isolate;
+}
+
+.codepen-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  background: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+  background-size: 25% 100%;
+  animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop .75s linear infinite;
+  animation-play-state: paused;
+  translate: -5% 0%;
+  transition: translate 0.25s ease-out;
+}
+
+.codepen-button:hover::before {
+  animation-play-state: running;
+  transition-duration: 0.75s;
+  translate: 0% 0%;
+}
+
+@keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+.codepen-button span {
+  position: relative;
+  display: block;
+  padding: .8rem 1rem;
+  font-size: 1.1rem;
+  background: var(--background-color);
+  border-radius: 3px;
+  height: 100%;
+}
+}

@@ -1,5 +1,6 @@
 nav {
     min-height: 60px;
+    // border: 2px solid red;
     .wrapper {
 
         padding: 0 4rem;
@@ -11,6 +12,7 @@ nav {
         position: relative;
 
         .brand {
+            
             a{
                 display: flex;
                 justify-content: center;
@@ -36,7 +38,9 @@ nav {
             }
         }
         .nav-items {
+            // border: 2px solid red;
             display: flex;
+            align-items: center;
             gap: 3rem;
             color: var(--lightest-slate);
             font-size: var(--tsm1);
