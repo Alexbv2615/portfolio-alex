@@ -18,7 +18,6 @@ function Projects() {
             "Nextjs",
             "Redux Toolkit",
             "Bootstrap",
-            "Firebase",
             "Nodejs",
             "Mongodb"
           ],
@@ -28,25 +27,42 @@ function Projects() {
           },
         },
 
-        // {
-        //   image: "/project2.png",
-        //   projectName: "Realtime Chat App",
-        //   projectLink: "https://netlify.com",
-        //   projectDescription:
-        //     "This is a chat app made with React and Node.js that sends real-time messages and is highly scalable. It uses advanced JavaScript concepts like debouncing and is optimized for React. It has 300+ stars on GitHub and over 180k views on YouTube.",
-        //   projectTech: [
-        //     "React",
-        //     "Sockets",
-        //     "Node.js",
-        //     "Express",
-        //     "MongoDB",
-        //     "Styled Components",
-        //   ],
-        //   projectExternalLinks: {
-        //     github: "",
-        //     externalLink: "",
-        //   },
-        // }
+        {
+          image: "/project2.png",
+          projectName: "Pokemon App",
+          projectLink: "https://pokemon-pi-alexbv2615.vercel.app/",
+          projectDescription:
+          "Este proyecto individual trata de una aplicación web donde podrás encontrar diferentes tipos de pokémon, utilizando una API externa. A partir de ella, puedes buscar pokémones, filtrarlos por origen o tipo, ordenarlos e incluso crear tu propio pokémon.",
+          projectTech: [
+            "React",
+            "Redux",
+            "Node.js",
+            "Express",
+            "Sequelize",
+            "PostgreSQL",
+          ],
+          projectExternalLinks: {
+            github: "https://github.com/Alexbv2615/Pokemon_PI",
+            externalLink: "https://pokemon-pi-alexbv2615.vercel.app/",
+          },
+        },
+
+        {
+          image: "/project3.png",
+          projectName: "Portfolio",
+          projectLink: "https://portfolio-alex-alexbv2615.vercel.app/",
+          projectDescription:
+          "Esta es la primera versión de mi portafolio personal. Me desafié a implementar nuevas tecnologías, como Sass para los estilos y Framer Motion para darle más vida a la página. Posiblemente, más adelante aplique nuevas técnicas para hacerlo aún más agradable.",
+          projectTech: [
+            "Nextjs",
+            "Sass",
+            "FramerMotion"
+          ],
+          projectExternalLinks: {
+            github: "https://github.com/Alexbv2615/portfolio-alex",
+            externalLink: "https://portfolio-alex-alexbv2615.vercel.app/",
+          },
+        }
       ];
 
     return (
@@ -56,7 +72,7 @@ function Projects() {
             initial="hidden" 
             whileInView="visible" 
             viewport={{ once: true }} 
-            transition={{ duration: 0.6 }} 
+            transition={{ duration: 0.8 }} 
             variants={{ visible: {opacity: 1, y: -50}, hidden: {opacity: 1, y: 0}}} 
             >
                 <h2>Projects</h2>
@@ -78,7 +94,7 @@ function Projects() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 0.8 }}
                 variants={{
                   visible: { opacity: 1, y: -50 },
                   hidden: { opacity: 0, y: 0 },

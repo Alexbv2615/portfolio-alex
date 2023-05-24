@@ -1,5 +1,7 @@
 .projects {
-    margin: 15rem 0;
+    margin-top: -2rem;
+    // border: 2px solid red;
+    padding-top: 6rem;
     .title {
       font-family: var(--raleway);
       color: var(--lightest-slate);
@@ -27,23 +29,27 @@
       }
     }
     &-container {
+      // border: 2px solid blue;
+      margin-top: 6rem;
       display: flex;
       flex-direction: column;
-      gap: 5rem;
+      gap: 10rem;
       .project {
         position: relative;
         display: flex;
         justify-content: flex-end;
         &-image {
-          &-container {
-            position: relative;
-            width: 600px;
-            height: 300px;
-          }
+          // border: 2px solid red;
           position: absolute;
           top: 0;
           left: 0;
-  
+
+          &-container {
+            position: relative;
+            width: 620px;
+            height: 300px;
+          }
+          
           &:hover {
             .project-image-overlay {
               background-color: #00000000;
@@ -52,6 +58,7 @@
               filter: none;
             }
           }
+          
           &-overlay {
             transition: 0.3s ease-in-out;
             z-index: 1;
@@ -67,8 +74,11 @@
           }
         }
         &-info {
-          z-index: 5;
-          width: 600px;
+          // border: 2px solid red;
+          // position: relative;
+          // top: 7rem;
+          z-index: 4;
+          width: 580px;
           display: flex;
           flex-direction: column;
           align-items: flex-end;
@@ -104,7 +114,9 @@
             gap: 1rem;
             flex-wrap: wrap;
             &-item {
-              color: var(--light-slate);
+              color: var(--lightest-slate);
+              text-shadow: 2px 2px 8px rgb(0, 0, 0);
+              font-weight: 500;
               font-family: var(--raleway);
             }
           }
@@ -119,8 +131,9 @@
               justify-content: center;
               align-items: center;
               &-link {
+                margin-top: .5rem;
                 padding: 10px;
-                color: var(--lightest-slate);
+                color: var(--light-slate);
                 transition: 0.3s ease-in-out;
                 outline: 2px dashed transparent;
                 &:hover {
