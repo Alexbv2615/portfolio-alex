@@ -18,6 +18,8 @@
     }
     &-title-sub {
         color: var(--lightest-slate);
+        // font-size: clamp(40px, 6vw, 60px);
+        // font-weight: 500;
     }
     &-text {
         color: var(--slate);

@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import { motion } from 'framer-motion';
+import { TypeAnimation } from 'react-type-animation';
 
 function Home() {
     return (
@@ -28,7 +29,7 @@ function Home() {
             >
                 Alexander Noel
             </motion.h2>
-            <motion.h3 
+            <motion.div
                 className="home-title-large home-title-sub"
                 initial={{ opacity: 0, y: 5}}
                 animate={{ opacity: 1, y: 0}}
@@ -38,8 +39,21 @@ function Home() {
                     delay: 1.05
                 }}
             >
-                Full Stack Developer
-            </motion.h3>
+                <TypeAnimation 
+                    sequence={[
+                    'Full Stack Developer',
+                    3000,
+                    'Front end Developer',
+                    3000,
+                    'Freelancer',
+                    3000
+                    ]}
+                    speed={30}
+                    wrapper="span"
+                    repeat={Infinity}
+                />
+            </motion.div>
+            
             <motion.p 
                 className="home-text"
                 initial={{ opacity: 0, y: 5}}
