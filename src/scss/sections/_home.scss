@@ -32,8 +32,16 @@
         margin-top: 2rem;
         .btn{
             padding: 1rem 2rem;
+            border-radius: 1rem;
             font-size: var(--tlarge);
             font-family: var(--raleway);
+            transition: 0.3s ease-in-out;
+            &:hover{
+                background-color: var(--light-navy);
+                border: 1px solid var(--light-slate);
+                color: var( --light-slate);
+                box-shadow: 4px 4px 12px 2px var(--navy-shadow);
+            }
         }
     }
     @media screen and (max-width: 768px) {

@@ -19,7 +19,21 @@ function About() {
                 <h2>About me</h2>
             </div>
             <div className="about-grid">
-                <div className="about-grid-info">
+                <motion.div 
+                    className="about-grid-info"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }} 
+                    transition={{
+                        duration: 0.3,
+                        ease: "easeInOut",
+                        delay: 0.8
+                    }}
+                    variants={{
+                        visible: { opacity: 1, x: 0 },
+                        hidden: { opacity: 0, x: -80 }
+                    }}
+                >
                     <p className="about-grid-info-text">
                         Hola!👋, me llamo Alexander, soy un apasionado del desarrollo 
                         Full Stack con una sólida formación en un campo técnico relacionado. Mi
@@ -47,14 +61,28 @@ function About() {
                         <li className="about-grid-info-list-item">React</li>
                         <li className="about-grid-info-list-item">Node.js</li>
                     </ul>
-                </div>
-                <div className="about-grid-photo">
+                </motion.div>
+                <motion.div 
+                    className="about-grid-photo"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }} 
+                    transition={{
+                        duration: 0.2,
+                        ease: "easeInOut",
+                        delay: 0.5
+                    }}
+                    variants={{
+                        visible: { opacity: 1, x: 0 },
+                        hidden: { opacity: 0, x: 80 }
+                    }}
+                >
                     <div className="overlay"></div>
                     <div className="overlay-border"></div>
                     <div className="about-grid-photo-container">
                         <Image src="/profile2.jpg" alt="profile" fill/>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </motion.div>
     )

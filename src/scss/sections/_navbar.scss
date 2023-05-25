@@ -84,6 +84,14 @@ nav {
             &-button{
                 .btn{
                     font-family: var(--raleway);
+                    border-radius: 1rem;
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                    background-color: var(--light-navy);
+                    border: 1px solid var(--light-slate);
+                    color: var( --light-slate);
+                    // box-shadow: 2px 2px 12px 2px var(--navy-shadow);
+                    }
                 }
             }
         }
