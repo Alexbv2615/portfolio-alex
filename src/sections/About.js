@@ -1,15 +1,27 @@
 import Image from "next/image";
+import { motion } from 'framer-motion';
 
 function About() {
     return (
-        <div className="about" id="about">
+        <motion.div 
+            className="about" 
+            id="about"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+                visible: { opacity: 1, y: -50 },
+                hidden: { opacity: 0, y: 0 }
+            }}
+        >
             <div className="title">
                 <h2>About me</h2>
             </div>
             <div className="about-grid">
                 <div className="about-grid-info">
                     <p className="about-grid-info-text">
-                        Hola!👋, me llamo Alexander Soy un apasionado del desarrollo 
+                        Hola!👋, me llamo Alexander, soy un apasionado del desarrollo 
                         Full Stack con una sólida formación en un campo técnico relacionado. Mi
                         interés por la tecnología y la programación me impulsó
                         a adentrarme en el mundo del desarrollo web, donde he
@@ -44,7 +56,7 @@ function About() {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 };
 

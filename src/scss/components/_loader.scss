@@ -1,0 +1,15 @@
+.loader {
+    color: var(--theme-color);
+    // border: 2px solid red;
+    fill: none;
+    display: flex;
+    padding-top: 10rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 90vh;
+    svg{
+        height: 10rem;
+        width: 10rem;
+    }
+}
