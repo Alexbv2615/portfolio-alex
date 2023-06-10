@@ -42,13 +42,13 @@ function Home() {
                 <TypeAnimation 
                     sequence={[
                     'Full Stack Developer',
-                    3000,
-                    'Front end Developer',
-                    3000,
+                    1000,
+                    'UX & UI Designer',
+                    1000,
                     'Freelancer',
-                    3000
+                    1000
                     ]}
-                    speed={30}
+                    speed={20}
                     wrapper="span"
                     repeat={Infinity}
                 />
@@ -64,7 +64,7 @@ function Home() {
                     delay: 1.35
                 }}
             >
-                Soy un Desarrollador Web Full Stack, me desenvuelvo bien tanto en el Front-end como en el Back-end del desarrollo. Siempre busco aprender y dominar nuevas tecnologías, en especial las que me demanden 👨‍💻.
+                Fusionando funcionalidad y estética en experiencias digitales excepcionales. Experto en el desarrollo tanto en el front-end como en el back-end, brindo soluciones integrales que combinan una interfaz atractiva con un rendimiento sólido.
             </motion.p>
             <motion.div 
                 className="home-button"
